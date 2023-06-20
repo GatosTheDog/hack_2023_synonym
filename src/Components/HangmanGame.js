@@ -3,6 +3,7 @@ import synonyms from '../data/synonyms.json'
 
 const HangmanGame = () => {
   const [word, setWord] = useState("");
+  const [solution, setSolution] = useState("");
   const [scrambledLetters, setScrambledLetters] = useState([]);
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [guess, setGuess] = useState("");
@@ -14,19 +15,22 @@ const HangmanGame = () => {
   }, []);
 
   useEffect(() => {
-    setScrambledLetters(scrambleWord(word));
-  }, [word]);
+    setScrambledLetters(scrambleWord(solution));
+  }, [solution]);
 
 
   const fetchRandomWord = () => {
     const randomGroup = synonyms.group[Math.floor(Math.random() * 20)];
-    const randomWord = randomGroup[Math.floor(Math.random() * randomGroup.length)];
-    console.log('aaaaaaaaaaaaaaaa',randomGroup, randomWord);
-    setWord(randomWord);
+    const randomWordToFindSynonym = randomGroup[Math.floor(Math.random() * randomGroup.length)];
+    const randomWordSolution = randomGroup[Math.floor(Math.random() * randomGroup.length)];
+    console.log('aaaaaaaaaaaaaaaa',randomGroup, randomWordToFindSynonym, randomWordSolution);
+    setWord(randomWordToFindSynonym);
+    setSolution(randomWordSolution);
+
   };
 
-  const scrambleWord = (word) => {
-    const scrambled = word.split("").sort(() => Math.random() - 0.5);
+  const scrambleWord = (solution) => {
+    const scrambled = solution.split("").sort(() => Math.random() - 0.5);
     return scrambled;
   };
 
@@ -44,7 +48,7 @@ const HangmanGame = () => {
     const updatedGuessedLetters = [...guessedLetters, guess];
     setGuessedLetters(updatedGuessedLetters);
 
-    if (!word.includes(guess)) {
+    if (!solution.includes(guess)) {
       setRemainingGuesses(remainingGuesses - 1);
     }
 
@@ -55,7 +59,7 @@ const HangmanGame = () => {
     setGuess("");
   };
 
-  const maskedWord = word
+  const maskedWord = solution
     .split("")
     .map((letter) => (guessedLetters.includes(letter) ? letter : "_"))
     .join(" ");
@@ -63,7 +67,7 @@ const HangmanGame = () => {
   return (
     <div>
       <h1>Hangman Game</h1>
-      <p>Guess the word:</p>
+      <p>Guess the synonym of word: {word}</p>
       <p>{maskedWord}</p>
       <p>Remaining Guesses: {remainingGuesses}</p>
       {!gameOver && remainingGuesses > 0 && (
