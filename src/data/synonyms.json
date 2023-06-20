@@ -1,0 +1,25 @@
+{
+  "group": [
+    ["afraid", "frightened", "terrified", "petrified", "scared"],
+    ["excellent", "wonderful", "terrific", "fabulous", "great", "outstanding", "superb"],
+    ["admire", "respect", "idolize", "revere", "look up to"],
+    ["argue", "quarrel", "disagree", "dispute", "fight"],
+    ["advice", "help", "guidance", "recommendation", "hint"],
+    ["arrogant", "proud", "self-important", "stuck up", "conceited", "boastful"],
+    ["brave", "courageous", "daring", "bold", "fearless", "gutsy"],
+    ["beautiful", "attractive", "pretty", "handsome", "good-looking", "gorgeous", "stunning", "breathtaking"],
+    ["dangerous", "unsafe", "hazardous", "risky", "perilous", "harmful"],
+    ["quiet", "silent", "tranquil", "peaceful", "hushed", "faint"],
+    ["intelligent", "brainy", "clever", "smart", "knowledgeable", "gifted"],
+    ["laugh", "chuckle", "giggle", "chortle", "crack up"],
+    ["obvious", "clear", "apparent", "plain", "evident", "conspicuous", "blatant", "glaring"],
+    ["perfect", "faultless", "impeccable", "immaculate", "ideal"],
+    ["understand", "comprehend", "fathom", "grasp", "digest"],
+    ["rude", "impolite", "cheeky", "impertinent", "disrespectful"],
+    ["say", "utter", "remark", "state", "comment", "declare", "announce"],
+    ["strong", "resilient", "robust", "tough", "sturdy", "hardy"],
+    ["walk", "amble", "march", "stroll", "wander"],
+    ["tired", "exhausted", "worn out", "drowsy", "sleepy", "knackered"],
+    ["unusual", "unique", "uncommon", "rare", "quirky", "distinctive"]
+  ]
+}
