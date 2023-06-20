@@ -22,7 +22,11 @@ const HangmanGame = () => {
   const fetchRandomWord = () => {
     const randomGroup = synonyms.group[Math.floor(Math.random() * 20)];
     const randomWordToFindSynonym = randomGroup[Math.floor(Math.random() * randomGroup.length)];
-    const randomWordSolution = randomGroup[Math.floor(Math.random() * randomGroup.length)];
+    let randomWordSolution;
+    do {
+      randomWordSolution = randomGroup[Math.floor(Math.random() * randomGroup.length)]
+    } while (randomWordToFindSynonym === randomWordSolution);
+
     console.log('aaaaaaaaaaaaaaaa',randomGroup, randomWordToFindSynonym, randomWordSolution);
     setWord(randomWordToFindSynonym);
     setSolution(randomWordSolution);
@@ -30,8 +34,16 @@ const HangmanGame = () => {
   };
 
   const scrambleWord = (solution) => {
+    const extraLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'g', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    const randomExtraLetters = [];
+    for (let i = 0; i < 4; i++) {
+      const randomIndex = Math.floor(Math.random() * extraLetters.length);
+      randomExtraLetters.push(extraLetters[randomIndex]);
+    }
     const scrambled = solution.split("").sort(() => Math.random() - 0.5);
-    return scrambled;
+    const combined = [...scrambled, ...randomExtraLetters];
+    const shuffled = combined.sort(() => Math.random() - 0.5);
+    return shuffled;
   };
 
   const handleGuessChange = (event) => {
