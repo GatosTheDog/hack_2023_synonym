@@ -1,0 +1,15 @@
+.container{
+    padding: 20px;
+    display: flex;
+    background-color: rgb(81, 244, 244);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    width: 50%;
+
+}
+
+.letterContainer{
+    display: flex;
+    align-content: center;
+}
