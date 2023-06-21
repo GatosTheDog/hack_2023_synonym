@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import synonyms from '../data/synonyms.json'
+import synonyms from '../data/synonyms.json';
+import './HangmanGame.css';
+import LetterButton from "./LetterButton";
 
 const HangmanGame = () => {
   const [word, setWord] = useState("");
   const [solution, setSolution] = useState("");
   const [scrambledLetters, setScrambledLetters] = useState([]);
   const [guessedLetters, setGuessedLetters] = useState([]);
-  const [guess, setGuess] = useState("");
-  const [remainingGuesses, setRemainingGuesses] = useState(6);
+  // const [guess, setGuess] = useState("");
+  const [remainingGuesses, setRemainingGuesses] = useState(3);
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
@@ -46,21 +48,21 @@ const HangmanGame = () => {
     return shuffled;
   };
 
-  const handleGuessChange = (event) => {
-    setGuess(event.target.value.toLowerCase());
-  };
+  // const handleGuessChange = (event) => {
+  //   setGuess(event.target.value.toLowerCase());
+  // };
 
-  const handleGuessSubmit = (event) => {
-    event.preventDefault();
+  const handleGuessSubmit = (letterPress) => {
+    // event.preventDefault();
 
-    if (guessedLetters.includes(guess) || gameOver) {
+    if (gameOver) {
       return;
     }
 
-    const updatedGuessedLetters = [...guessedLetters, guess];
+    const updatedGuessedLetters = [...guessedLetters, letterPress];
     setGuessedLetters(updatedGuessedLetters);
 
-    if (!solution.includes(guess)) {
+    if (!solution.includes(letterPress)) {
       setRemainingGuesses(remainingGuesses - 1);
     }
 
@@ -68,31 +70,42 @@ const HangmanGame = () => {
       setGameOver(true);
     }
 
-    setGuess("");
+    // setGuess("");
+  };
+
+  const submitGuess = () => {
+    const guessedWord = guessedLetters.join("");
+    if (guessedWord === solution) {
+      alert('correct')
+    } else {
+      alert('fail')
+    }
   };
 
   const maskedWord = solution
-    .split("")
-    .map((letter) => (guessedLetters.includes(letter) ? letter : "_"))
-    .join(" ");
+  .split("")
+  .map((letter, index) => ((guessedLetters[index] || "_")))
+  .join(" ");
 
   return (
-    <div>
-      <h1>Hangman Game</h1>
+    <div className="container">
+      <h1>Synonym Game</h1>
       <p>Guess the synonym of word: {word}</p>
       <p>{maskedWord}</p>
       <p>Remaining Guesses: {remainingGuesses}</p>
       {!gameOver && remainingGuesses > 0 && (
-        <div>
+        <div >
           <p>Scrambled Letters:</p>
-          <p>{scrambledLetters.join(" ")}</p>
-          <form onSubmit={handleGuessSubmit}>
-            <input type="text" value={guess} onChange={handleGuessChange} />
-            <button type="submit">Guess</button>
-          </form>
+          <div className="letterContainer">{scrambledLetters.map((letter,index)=>
+              <LetterButton key={index} letter={letter} onClick={handleGuessSubmit}
+          />)}
+          </div>
+          <div>
+            <button onClick={submitGuess}>Submit Guess</button>
+          </div>
         </div>
       )}
-      {gameOver && <p>Game Over. The word was: {word}</p>}
+      {gameOver && <p>Game Over. The word was: {solution}</p>}
     </div>
   );
 };
