@@ -83,7 +83,9 @@ const HangmanGame = () => {
   };
 
   const hearts=[];
-  for(let i=1;i<=remainingGuesses;i++){hearts.push(<span>❤️</span>);}
+  for(let i=1;i<=remainingGuesses;i++){
+    hearts.push(<span>❤️</span>);
+  }
   const maskedWord = solution
   .split("")
   .map((letter, index) => ((guessedLetters[index] || "_")))
