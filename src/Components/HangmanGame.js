@@ -82,6 +82,8 @@ const HangmanGame = () => {
     }
   };
 
+  const hearts=[];
+  for(let i=1;i<=remainingGuesses;i++){hearts.push(<span>❤️</span>);}
   const maskedWord = solution
   .split("")
   .map((letter, index) => ((guessedLetters[index] || "_")))
@@ -90,9 +92,9 @@ const HangmanGame = () => {
   return (
     <div className="container">
       <h1>Synonym Game</h1>
+      <div>{hearts}</div>
       <p>Guess the synonym of word: {word}</p>
       <p>{maskedWord}</p>
-      <p>Remaining Guesses: {remainingGuesses}</p>
       {!gameOver && remainingGuesses > 0 && (
         <div >
           <p>Scrambled Letters:</p>

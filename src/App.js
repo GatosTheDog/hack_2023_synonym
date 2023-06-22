@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HangmanGame from "./Components/HangmanGame";
 import HintsGame from "./Components/HintsGame";
+import "./App.css";
 
 const App = () => {
   const [gameStarted, setGameStarted] = useState(true);
