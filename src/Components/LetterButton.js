@@ -14,7 +14,7 @@ const LetterButton=({onClick,letter})=>{
                 boxShadow: '2px 2px 1px #0a051a',
                 margin:2,
                 color:!disabled?"black":"gray"
-            }} 
+            }}
             disabled={disabled}
 
              onClick={()=>handleClick()}>{letter}</button>

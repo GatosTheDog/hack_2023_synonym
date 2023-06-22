@@ -1,0 +1,496 @@
+{
+  "words": [
+    {
+      "word": "afraid",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "excellent",
+      "definition":"extremely good"
+    },
+    {
+      "word": "admire",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "argue",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "advice",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "arrogant",
+      "definition":"extremely good"
+    },
+    {
+      "word": "brave",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "beautiful",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "dangerous",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "quiet",
+      "definition":"extremely good"
+    },
+    {
+      "word": "intelligent",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "laugh",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "obvious",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "perfect",
+      "definition":"extremely good"
+    },
+    {
+      "word": "understand",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "rude",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "say",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "strong",
+      "definition":"extremely good"
+    },
+    {
+      "word": "walk",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "tired",
+      "definition":"extremely good"
+    },
+    {
+      "word": "unusual",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "frightened",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "wonderful",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "respect",
+      "definition":"extremely good"
+    },
+    {
+      "word": "quarrel",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "help",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "proud",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "courageous",
+      "definition":"extremely good"
+    },
+    {
+      "word": "attractive",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "unsafe",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "silent",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "brainy",
+      "definition":"extremely good"
+    },
+    {
+      "word": "chuckle",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "clear",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "faultless",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "comprehend",
+      "definition":"extremely good"
+    },
+    {
+      "word": "impolite",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "utter",
+      "definition":"extremely good"
+    },
+    {
+      "word": "resilient",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "amble",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "exhausted",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "unique",
+      "definition":"extremely good"
+    },
+    {
+      "word": "terrified",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "terrific",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "idolize",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "disagree",
+      "definition":"extremely good"
+    },
+    {
+      "word": "guidance",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "self",
+      "definition":"important to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "daring",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "pretty",
+      "definition":"extremely good"
+    },
+    {
+      "word": "hazardous",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "tranquil",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "clever",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "giggle",
+      "definition":"extremely good"
+    },
+    {
+      "word": "apparent",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "impeccable",
+      "definition":"extremely good"
+    },
+    {
+      "word": "fathom",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "cheeky",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "remark",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "robust",
+      "definition":"extremely good"
+    },
+    {
+      "word": "march",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "worn",
+      "definition":"out to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "uncommon",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "petrified",
+      "definition":"extremely good"
+    },
+    {
+      "word": "fabulous",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "revere",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "dispute",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "recommendation",
+      "definition":"extremely good"
+    },
+    {
+      "word": "stuck",
+      "definition":"up to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "bold",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "handsome",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "risky",
+      "definition":"extremely good"
+    },
+    {
+      "word": "peaceful",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "smart",
+      "definition":"extremely good"
+    },
+    {
+      "word": "chortle",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "plain",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "immaculate",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "grasp",
+      "definition":"extremely good"
+    },
+    {
+      "word": "impertinent",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "state",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "tough",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "stroll",
+      "definition":"extremely good"
+    },
+    {
+      "word": "drowsy",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "rare",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "scared",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "great",
+      "definition":"extremely good"
+    },
+    {
+      "word": "look",
+      "definition":"up to to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "fight",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "hint",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "conceited",
+      "definition":"extremely good"
+    },
+    {
+      "word": "fearless",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "good",
+      "definition":"looking extremely good"
+    },
+    {
+      "word": "perilous",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "hushed",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "knowledgeable",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "crack",
+      "definition":"up extremely good"
+    },
+    {
+      "word": "evident",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "ideal",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "digest",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "disrespectful",
+      "definition":"extremely good"
+    },
+    {
+      "word": "comment",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "sturdy",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "wander",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "sleepy",
+      "definition":"extremely good"
+    },
+    {
+      "word": "quirky",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "outstanding",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "boastful",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "gutsy",
+      "definition":"extremely good"
+    },
+    {
+      "word": "gorgeous",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "harmful",
+      "definition":"extremely good"
+    },
+    {
+      "word": "faint",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "gifted",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "conspicuous",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "declare",
+      "definition":"extremely good"
+    },
+    {
+      "word": "hardy",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "knackered",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "distinctive",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "superb",
+      "definition":"extremely good"
+    },
+    {
+      "word": "stunning",
+      "definition":"to respect and approve of someone or their behaviour"
+    },
+    {
+      "word": "blatant",
+      "definition":"to speak angrily to someone, telling that person that you disagree with them"
+    },
+    {
+      "word": "announce",
+      "definition":"feeling fear, or feeling worry about the possible results of a particular situation"
+    },
+    {
+      "word": "glaring",
+      "definition":"extremely good"
+    },
+    {
+      "word": "breathtaking",
+      "definition":"to respect and approve of someone or their behaviour"
+    }
+  ]
+}

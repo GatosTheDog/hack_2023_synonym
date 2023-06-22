@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import synonyms from '../data/synonyms.json';
+import definitions from '../data/definitions.json';
 import './HangmanGame.css';
 import LetterButton from "./LetterButton";
 
@@ -11,6 +11,7 @@ const HangmanGame = () => {
   // const [guess, setGuess] = useState("");
   const [remainingGuesses, setRemainingGuesses] = useState(3);
   const [gameOver, setGameOver] = useState(false);
+  const [hintsCounter, setHintsCounter] = useState(1)
 
   useEffect(() => {
     fetchRandomWord();
@@ -20,18 +21,20 @@ const HangmanGame = () => {
     setScrambledLetters(scrambleWord(solution));
   }, [solution]);
 
+  let maskedWord = solution
+  .split("")
+  .map((letter, index) => ((guessedLetters[index] || "_")))
+  .join(" ");
+
 
   const fetchRandomWord = () => {
-    const randomGroup = synonyms.group[Math.floor(Math.random() * 20)];
-    const randomWordToFindSynonym = randomGroup[Math.floor(Math.random() * randomGroup.length)];
-    let randomWordSolution;
-    do {
-      randomWordSolution = randomGroup[Math.floor(Math.random() * randomGroup.length)]
-    } while (randomWordToFindSynonym === randomWordSolution);
+    const randomGroup = definitions.words[Math.floor(Math.random() * 122)];
+    const randomWordToFind = randomGroup.word;
+    const randomDefinition = randomGroup.definition;
 
-    console.log('aaaaaaaaaaaaaaaa',randomGroup, randomWordToFindSynonym, randomWordSolution);
-    setWord(randomWordToFindSynonym);
-    setSolution(randomWordSolution);
+    console.log('aaaaaaaaaaaaaaaa',randomGroup, randomWordToFind, randomDefinition);
+    setWord(randomDefinition);
+    setSolution(randomWordToFind);
 
   };
 
@@ -51,6 +54,14 @@ const HangmanGame = () => {
   // const handleGuessChange = (event) => {
   //   setGuess(event.target.value.toLowerCase());
   // };
+
+  const handleHint = () => {
+    console.log('AAAAAAAAAAAAAAAAAA', Math.random() < 0.5);
+    maskedWord = solution
+    .split("")
+    .map((letter, index) => (Math.random() < 0.5 ? letter : "_"))
+    .join(" ");
+  }
 
   const handleGuessSubmit = (letterPress) => {
     // event.preventDefault();
@@ -82,15 +93,10 @@ const HangmanGame = () => {
     }
   };
 
-  const maskedWord = solution
-  .split("")
-  .map((letter, index) => ((guessedLetters[index] || "_")))
-  .join(" ");
-
   return (
     <div className="container">
       <h1>Synonym Game</h1>
-      <p>Guess the synonym of word: {word}</p>
+      <p>Guess the word by the definition: {word}</p>
       <p>{maskedWord}</p>
       <p>Remaining Guesses: {remainingGuesses}</p>
       {!gameOver && remainingGuesses > 0 && (
@@ -102,6 +108,7 @@ const HangmanGame = () => {
           </div>
           <div>
             <button onClick={submitGuess}>Submit Guess</button>
+            <button onClick={handleHint}>Take a hint</button>
           </div>
         </div>
       )}
