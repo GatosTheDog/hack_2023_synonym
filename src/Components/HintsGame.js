@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import definitions from '../data/definitions.json';
+import definitions_hints from '../data/definitions_hints.json';
 import './HangmanGame.css';
 import LetterButton from "./LetterButton";
 
@@ -28,7 +28,7 @@ const HangmanGame = () => {
 
 
   const fetchRandomWord = () => {
-    const randomGroup = definitions.words[Math.floor(Math.random() * 122)];
+    const randomGroup = definitions_hints.words[Math.floor(Math.random() * 23)];
     const randomWordToFind = randomGroup.word;
     const randomDefinition = randomGroup.definition;
 
@@ -47,8 +47,7 @@ const HangmanGame = () => {
     }
     const scrambled = solution.split("").sort(() => Math.random() - 0.5);
     const combined = [...scrambled, ...randomExtraLetters];
-    const shuffled = combined.sort(() => Math.random() - 0.5);
-    return shuffled;
+    return combined.sort(() => Math.random() - 0.5);
   };
 
   // const handleGuessChange = (event) => {
@@ -56,11 +55,8 @@ const HangmanGame = () => {
   // };
 
   const handleHint = () => {
-    console.log('AAAAAAAAAAAAAAAAAA', Math.random() < 0.5);
-    maskedWord = solution
-    .split("")
-    .map((letter, index) => (Math.random() < 0.5 ? letter : "_"))
-    .join(" ");
+    setGuessedLetters(solution[0])
+    console.log('AAAAAAAAAAAAAAAAAA', maskedWord);
   }
 
   const handleGuessSubmit = (letterPress) => {
