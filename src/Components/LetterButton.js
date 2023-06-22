@@ -1,23 +1,18 @@
 import React, { useState } from "react";
 import './LetterButton.css';
 
-const LetterButton=({onClick,letter})=>{
-    const [disabled,setDisabled]=useState(false);
-    const handleClick = ()=>{
-        onClick(letter);
-        setDisabled(true);
-    }
+const LetterButton=({onClick,letterObject})=>{
     return (
         <div className="button">
             <button
+            className="buttonInline"
              style={{
                 boxShadow: '2px 2px 1px #0a051a',
                 margin:2,
-                color:!disabled?"black":"gray"
+                color:!letterObject.isDisabled?"black":"gray"
             }}
-            disabled={disabled}
-
-             onClick={()=>handleClick()}>{letter}</button>
+            disabled={letterObject.isDisabled}
+             onClick={()=>onClick(letterObject)}>{letterObject.letter}</button>
         </div>
     )
 }

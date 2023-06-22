@@ -24,6 +24,7 @@ const App = () => {
   }
 
   return (
+    <div className="wrapper" >
     <div className="App" >
     {gameStarted &&
       <div>
@@ -35,8 +36,8 @@ const App = () => {
     {hintsGameStarted &&
     <div>
 
-      <HintsGame />
-      <button onClick={handleBackToHome}>Back to home screen</button>
+      <HintsGame backToHome={handleBackToHome}/>
+      
     </div>
     }
     {hangManGameStarted && 
@@ -45,6 +46,7 @@ const App = () => {
       <button onClick={handleBackToHome}>Back to home screen</button>
     </div>
     }
+    </div>
     </div>
   );
 };

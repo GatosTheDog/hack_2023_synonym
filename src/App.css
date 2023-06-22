@@ -1,7 +1,14 @@
 .App {
- display:flex;
+  color:white;
+  display:flex;
   justify-content: center;
   align-content: center;
 }
+
+.wrapper{
+  background-color: #111A3B;
+  height:1000px;
+}
+
 
 

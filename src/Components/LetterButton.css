@@ -1,8 +1,12 @@
 .button{
-    width:20;
-    height:20;
+    width:30px;
+    height:30px;
     background-color:'gray';
     margin:5;
     
     padding: 5;
+}
+.buttonInline:hover{
+ background-color:#ffffff8a;
+ cursor:pointer;
 }
