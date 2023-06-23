@@ -8,6 +8,7 @@ const Button =({onClick,name})=>{
         <button 
         onClick={onClick}
         className="buttonContainer"
+        style={{fontSize:20}}
         >
             {name}
         </button>

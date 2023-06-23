@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./Modal.css";
 
-function Modal({onClick,title,message}) {
+function Modal({onClick,title,message,onGoBack,successButton}) {
 
  return (
     <div>
@@ -11,8 +11,11 @@ function Modal({onClick,title,message}) {
             <p>{message}</p>
 
             <div className="modal-buttons">
-              <button onClick={onClick}>Submit</button>
+              <button onClick={onClick}>{successButton}</button>
             </div>
+            {onGoBack && <div className="modal-buttons">
+              <button onClick={onGoBack}>Go Back</button>
+            </div>}
           </div>
         </div>
     </div>

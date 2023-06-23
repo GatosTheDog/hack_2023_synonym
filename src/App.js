@@ -25,28 +25,26 @@ const App = () => {
 
   return (
     <div className="wrapper" >
-    <div className="App" >
-    {gameStarted &&
-      <div>
-        <h1>Choose a Game</h1>
-          <Button onClick={goToHandMan} name="Synonym Game"/>
-          <Button onClick={goToHints} name="Hints Game"/>
+      <div className="App" >
+        {gameStarted &&
+          <div>
+            <h1>Choose a Game</h1>
+              {/* <Button onClick={goToHandMan} name="Synonym Game"/> */}
+              <Button onClick={goToHints} name="Hints Game"/>
+          </div>
+        }
+      {hintsGameStarted &&
+        <div>
+          <HintsGame backToHome={handleBackToHome}/>
+        </div>
+      }
+      {hangManGameStarted && 
+        <div>
+          <HangmanGame />
+          <button onClick={handleBackToHome}>Back to home screen</button>
+        </div>
+      }
       </div>
-    }
-    {hintsGameStarted &&
-    <div>
-
-      <HintsGame backToHome={handleBackToHome}/>
-      
-    </div>
-    }
-    {hangManGameStarted && 
-    <div>
-      <HangmanGame />
-      <button onClick={handleBackToHome}>Back to home screen</button>
-    </div>
-    }
-    </div>
     </div>
   );
 };

@@ -26,3 +26,9 @@
     cursor: pointer;
     background-color:#ffffff65;
 }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
