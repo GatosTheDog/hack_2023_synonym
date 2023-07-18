@@ -197,9 +197,7 @@ const HangmanGame = ({backToHome}) => {
   }
 
   function restartGame(){
-    if (isSuccesfullGuess){
-      setRemainingHits(4);
-    }
+    setRemainingHits(4);
     setIsSuccesfullGuess(false);
     setIsIncorrectGuess(false);
     setGuessedLetters([]);
