@@ -14,10 +14,6 @@ const App = () => {
     setHintsGameStarted(false);
     setHangManGameStarted(false);
   };
-  const goToHandMan=()=>{
-    setHangManGameStarted(true);
-    setGameStarted(false)
-  }
   const goToHints=()=>{
     setHintsGameStarted(true);
     setGameStarted(false)
@@ -29,7 +25,6 @@ const App = () => {
         {gameStarted &&
           <div>
             <h1>Choose a Game</h1>
-              {/* <Button onClick={goToHandMan} name="Synonym Game"/> */}
               <Button onClick={goToHints} name="Hints Game"/>
           </div>
         }

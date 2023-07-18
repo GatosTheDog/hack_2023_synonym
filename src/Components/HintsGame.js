@@ -5,29 +5,6 @@ import Button from "./Button";
 import LetterButton from "./LetterButton";
 import Modal from "./Modal";
 
-const rounds = [
-  {
-    number:1,
-    timer:30
-  },
-  {
-    number:2,
-    timer:30
-  },
-  {
-    number:3,
-    timer:30
-  },
-  {
-    number:4,
-    timer:30
-  },
-  {
-    number:5,
-    timer:30
-  },
-]
-
 const HangmanGame = ({backToHome}) => {
   const [word, setWord] = useState("");
   const [solution, setSolution] = useState("");
@@ -92,7 +69,12 @@ const HangmanGame = ({backToHome}) => {
       isDisabled: false,
       id: index
     }))
-    letterObject.find((item)=>{if(item.letter===solution[0]){setFirstLetterId(item.id)}});
+    letterObject.find((item)=>{
+      if(item.letter===solution[0]){
+        setFirstLetterId(item.id)
+      }
+      return null;
+    });
     return letterObject;
   };
 
@@ -151,7 +133,7 @@ const HangmanGame = ({backToHome}) => {
       })
     }
 
-  },[hintsCounter])
+  },[hintsCounter, firstLetterId, guessedLetters, randomExtraLetters, scrambledLetters, solution]) 
 
   const onLetterPress = (item) => {
     const letterPress = item.letter;
